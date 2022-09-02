@@ -1,0 +1,95 @@
+.main-nav {
+    display: flex;
+    background-color: #44b;
+    justify-content: space-between;
+    color: white;
+}
+.sub-nav {
+    position: relative;
+    display: flex;
+    color: white;
+}
+.short-width {
+    display: flex;
+}
+.full-width {
+    position: relative;
+    left: 1475px;
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .short-width {
+        display: none;
+    }
+    .full-width {
+        display: flex;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+.nav-list {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 4px;
+}
+.nav-list li a {
+    padding: 10px;
+    border-right: 5px;
+    color: white;
+    text-decoration: none;
+}
+.nav-list li:last-of-type a {
+    border-right: 0;
+}
+.search-form {
+    position: relative;
+    display: flex;
+    height: 30px;
+    width: 100%;
+
+}
+button {
+    color: white;
+    position: relative;
+    top: 20px;
+    background-color: #44b;
+    padding: 5px;
+    border: 0;
+    margin-right: 30px;
+}
+input {
+    flex-grow: 1;
+    padding: 5px;
+    position: relative;
+    top: 20px;
+    border: 0;
+    margin-left: 80px;
+    border-bottom: 4px solid #44b;
+}
+.company-name {
+    position: relative;
+    color: #44b;
+    justify-content: center;
+    font-size: 40px;
+    left: 40px;
+    top: 5px;
+    margin-bottom: 20px;
+}
+.credit-offer {
+    background-color: red;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    margin-right: 12px;
+    color: white;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 500;
+    height: 30px;
+}
